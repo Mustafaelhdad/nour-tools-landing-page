@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+
+    <link rel="icon" href="./img/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@400..700&family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <link rel="stylesheet" href="./main.css" />
+    <title>Abu Fahad Tec</title>
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+      <div class="container">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarResponsive"
+          aria-controls="navbarResponsive"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav mx-auto flex-row-reverse">
+            <li class="nav-item active">
+              <a class="nav-link" href="#bank-account">الحساب البنكي</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#print-bills">طباعة الفواتير</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#notes">ملاحظات</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#websites">المواقع</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#programs">البرامج</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <header>
+      <div
+        id="carouselExampleCaptions"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+
+        <div class="carousel-inner">
+          <div
+            class="carousel-item active"
+            style="background-image: url('./img/slide_1.jpg')"
+          >
+            <div class="carousel-caption">
+              <h5>First slide label</h5>
+              <p>
+                Some representative placeholder content for the first slide.
+              </p>
+            </div>
+          </div>
+          <div
+            class="carousel-item"
+            style="background-image: url('./img/slide_2.jpg')"
+          >
+            <div class="carousel-caption">
+              <h5>Second slide label</h5>
+              <p>
+                Some representative placeholder content for the second slide.
+              </p>
+            </div>
+          </div>
+          <div
+            class="carousel-item"
+            style="background-image: url('./img/slide_3.jpg')"
+          >
+            <div class="carousel-caption">
+              <h5>Third slide label</h5>
+              <p>
+                Some representative placeholder content for the third slide.
+              </p>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </header>
+
+    <!-- photo section -->
+    <section class="py-5 photo-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 my-auto text-center">
+            <h1 class="fw-light">البرامج المدرسية المساندة لنظام نور</h1>
+            <p class="lead">تصميم مواقع وبرامج</p>
+          </div>
+
+          <div class="col-md-6 d-flex align-items-center overflow-hidden">
+            <img
+              src="./img/الملك و ولي العهد.png"
+              height="400px"
+              width="100%"
+              class="rounded-1"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- bank account info -->
+    <section
+      id="bank-account"
+      class="py-5 text-center bg-light position-relative overflow-hidden bank-section"
+    >
+      <div class="ribbon ribbon-left">هام</div>
+
+      <h3>الحساب البنكي الجديد</h3>
+      <p class="lead">
+        مصرف الانماء <br />
+        سلطان سعد صالح بن فارس <br />
+        برمجة وتطوير المواقع الالكترونية
+        <br />
+        <br />
+        رقم الحساب: 68203424973000 <br />
+        SA0605000068203424973000 :رقم الايبان<br />
+      </p>
+    </section>
+
+    <!-- print bills section -->
+    <section id="print-bills" class="py-5 print-bills-section">
+      <div class="container">
+        <div class="row d-flex align-items-center">
+          <div class="col-md-6 text-center">
+            <h4 class="print-download mb-0">
+              <a class="" href="https://www.204105.com/F/AnyDesk.exe"
+                >تحميل برنامج اني ديسك</a
+              >
+            </h4>
+          </div>
+
+          <div class="col-md-6 text-center mt-3 mt-md-0">
+            <button class="btn btn-secondary btn-lg py-1">
+              <a
+                href="https://www.204105.com/Print_Invoise.aspx"
+                class="text-decoration-none text-white"
+              >
+                طباعة الفواتير
+              </a>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- notes section -->
+    <section id="notes" class="py-5 bg-light notes-section">
+      <div class="container">
+        <div class="row text-center">
+          <h3 class="mb-4">ملاحظات</h3>
+
+          <ul class="list-unstyled list pl-5">
+            <li class="mb-3 d-flex justify-content-center align-items-center">
+              <span>Windows 10 Pro مطلوب نظام تشغيل لجميع البرامج &nbsp;</span>
+              <i
+                class="fa fa-windows fa-lg ms-1 ms-md-0"
+                aria-hidden="true"
+              ></i>
+            </li>
+            <li class="mb-3 d-flex justify-content-center align-items-center">
+              <span>
+                ينتهي الإشتراك في جميع البرامج بنهاية العام الدراسي &nbsp;
+              </span>
+              <i
+                class="fa fa-hourglass-end fa-lg ms-1 ms-md-0"
+                aria-hidden="true"
+              ></i>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- websites section -->
+    <section id="websites" class="py-5 websites-section">
+      <div class="container">
+        <h3 class="text-center mb-4">المواقع</h3>
+
+        <div class="row">
+          <div class="col-lg-4 mb-2 mb-lg-0">
+            <div class="card card-margin p-3">
+              <div class="card-header no-border d-flex flex-column">
+                <i
+                  class="fa fa-graduation-cap fa-3x rounded-circle p-3 mb-3"
+                  aria-hidden="true"
+                ></i>
+
+                <h5 class="card-title mb-3 text-center">
+                  موقع طباعة كشوف الدرجات والمهارات واللجان / ابتدائي ومتوسط
+                </h5>
+              </div>
+
+              <div class="card-body px-0 pt-0">
+                <div class="widget-49">
+                  <ol class="ps-0 ms-0 widget-49-meeting-points">
+                    <li class="widget-49-meeting-item">
+                      <span>كشوف الدرجات 100 ريال </span>
+                    </li>
+                    <li class="widget-49-meeting-item">
+                      <span>كشوف المهارات 100 ريال </span>
+                    </li>
+                    <li class="widget-49-meeting-item">
+                      <span>كشوف اللجان 100ريال</span>
+                    </li>
+                  </ol>
+                </div>
+              </div>
+
+              <div class="widget-49-meeting-action text-center">
+                <a
+                  target="_blank"
+                  href="https://www.s204105.com/"
+                  class="btn btn-sm btn-flash-border-primary"
+                  >معرفة المزيد</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 mb-2 mb-lg-0">
+            <div class="card card-margin p-3">
+              <div class="card-header no-border d-flex flex-column">
+                <i
+                  class="fa fa-bar-chart fa-3x rounded-circle p-3 mb-3"
+                  aria-hidden="true"
+                ></i>
+
+                <h5 class="card-title mb-3 text-center">
+                  موقع طباعة احصائية الدرجات / ابتدائي ومتوسط
+                </h5>
+              </div>
+
+              <div class="card-body px-0 pt-0">
+                <div class="widget-49">
+                  <ol class="ps-0 ms-0 widget-49-meeting-points">
+                    <li class="widget-49-meeting-item">
+                      <span>احصائية الدرجات 100 ريال</span>
+                    </li>
+                    <li class="widget-49-meeting-item">
+                      <span>احصائية المهارت 100 ريال</span>
+                    </li>
+                  </ol>
+                </div>
+              </div>
+
+              <div class="widget-49-meeting-action text-center">
+                <a
+                  target="_blank"
+                  href="https://www.tuss4.com/"
+                  class="btn btn-sm btn-flash-border-primary"
+                  >معرفة المزيد</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="card card-margin p-3">
+              <div class="card-header no-border d-flex flex-column">
+                <i
+                  class="fa fa-globe fa-3x rounded-circle p-3 mb-3"
+                  aria-hidden="true"
+                ></i>
+
+                <h5 class="card-title mb-3 text-center">
+                  موقع الاتصالات الادارية
+                </h5>
+              </div>
+
+              <div class="card-body px-0 pt-0">
+                <div class="widget-49">
+                  <ol class="ps-0 ms-0 widget-49-meeting-points">
+                    <li class="widget-49-meeting-item">
+                      <span>اشتراك الموقع 150 ريال</span>
+                    </li>
+                  </ol>
+                </div>
+              </div>
+
+              <div class="widget-49-meeting-action text-center">
+                <a
+                  target="_blank"
+                  href="https://www.tuss0.com/New/Default.aspx"
+                  class="btn btn-sm btn-flash-border-primary"
+                  >معرفة المزيد</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- programs section -->
+    <section id="programs" class="pb-5 websites-section programs-section">
+      <div class="container">
+        <h3 class="text-center mb-4">البرامج</h3>
+
+        <div class="row d-flex justify-content-center">
+          <div class="col-md-4 mb-2 mb-lg-0">
+            <div class="card card-margin p-3">
+              <div class="card-header no-border mb-3 d-flex flex-column">
+                <i
+                  class="fa fa-exchange fa-3x rounded-circle p-3 mb-3"
+                  aria-hidden="true"
+                ></i>
+
+                <h5 class="card-title text-center mb-0">
+                  ناقل البيانات والتقارير
+                </h5>
+
+                <span class="lead version-style text-muted"
+                  >إصدار 1446.0.1.0</span
+                >
+                <span class="lead stage-style">ابتدائي ومتوسط وروضات</span>
+              </div>
+
+              <div class="card-body px-0 pt-0">
+                <div class="widget-49">
+                  <ol class="ps-0 ms-0 widget-49-meeting-points">
+                    <li class="widget-49-meeting-item">
+                      <span>تسجيل الدرجات والمهارات في نظام نور </span>
+                    </li>
+                    <li class="widget-49-meeting-item">
+                      <span>اشتراك 100 ريال وكل جهاز اضافي 50 ريال</span>
+                    </li>
+                  </ol>
+                </div>
+              </div>
+
+              <div class="widget-49-meeting-action text-center">
+                <a
+                  target="_blank"
+                  href="https://www.204105.com/F/1446-02-01-1.exe"
+                  class="btn btn-sm btn-secondary"
+                  >تحميل برنامج ناقل البيانات والتقارير</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card card-margin p-3">
+              <div class="card-header no-border mb-3 d-flex flex-column">
+                <i
+                  class="fa fa-user-times fa-3x rounded-circle p-3 mb-3"
+                  aria-hidden="true"
+                ></i>
+
+                <h5 class="card-title text-center mb-0">حوسبة الغياب</h5>
+
+                <span class="lead version-style text-muted"
+                  >إصدار 1446.0.1.0
+                </span>
+                <span class="lead stage-style">جميع المراحل</span>
+              </div>
+
+              <div class="card-body px-0 pt-0">
+                <div class="widget-49">
+                  <ol class="ps-0 ms-0 widget-49-meeting-points">
+                    <li class="widget-49-meeting-item">
+                      <span>تسجيل الغياب والتأخر الصباحي في البرنامج </span>
+                    </li>
+                    <li class="widget-49-meeting-item">
+                      <span>تصدير الغياب الى نور وطباعة احصائيات وتقارير</span>
+                    </li>
+                    <li class="widget-49-meeting-item">
+                      <span>اشتراك كل جهاز 100 ريال</span>
+                    </li>
+                  </ol>
+                </div>
+              </div>
+
+              <div class="widget-49-meeting-action text-center">
+                <a
+                  target="_blank"
+                  href="https://www.204105.com/F/1446-01-29-2.exe"
+                  class="btn btn-sm btn-secondary"
+                  >تحميل برنامج حوسبة الغياب</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="bg-light py-2 text-center">
+      <div class="container">
+        Copyright &copy; 2024
+        <a target="_blank" href="https://abu-fahad.com">abu-fahad.com</a>
+      </div>
+    </footer>
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
