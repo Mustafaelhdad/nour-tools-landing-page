@@ -1,0 +1,31 @@
+* {
+  font-family: "El Messiri";
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* header section style */
+.login-header {
+  height: 30vh;
+}
+
+/* form section style */
+.login-form {
+  height: 65vh;
+}
+
+.login-form .register-link a {
+  color: #000;
+  transition: all 0.3s;
+}
+
+.login-form .register-link a:hover {
+  color: #6c757d;
+}
+
+/* footer section style */
+.footer-login {
+  height: 5vh;
+}
