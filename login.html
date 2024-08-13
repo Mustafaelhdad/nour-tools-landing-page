@@ -49,42 +49,61 @@
           <div class="col-12 col-md-8 m-auto">
             <form id="loginForm" class="">
               <div class="form-group">
-                <label for="username">اسم المستخدم</label>
-                <input
-                  type="text"
-                  class="form-control"
-                  id="username"
-                  aria-describedby="usernameHelp"
-                  placeholder="اسم المستخدم"
-                  required
-                />
+                <div class="form-group row">
+                  <div class="col-2 col-lg-1 text-center">
+                    <label for="username">
+                      <i class="fa fa-user fa-2x" aria-hidden="true"></i>
+                    </label>
+                  </div>
+
+                  <div class="col-10 col-lg-11">
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="username"
+                      aria-describedby="usernameHelp"
+                      placeholder="اسم المستخدم"
+                      required
+                    />
+
+                    <div class="invalid-feedback">
+                      يرجى إدخال اسم مستخدم صحيح.
+                    </div>
+                  </div>
+                </div>
+
                 <div class="invalid-feedback">يرجى إدخال اسم مستخدم صحيح.</div>
               </div>
 
-              <div class="form-group mt-2">
-                <label for="password">كلمة المرور</label>
-                <input
-                  type="password"
-                  class="form-control"
-                  id="password"
-                  placeholder="كلمة المرور"
-                  required
-                  minlength="6"
-                />
-                <div class="invalid-feedback">
-                  يرجى إدخال كلمة مرور صحيحة (لا تقل عن 6 أحرف).
+              <div class="form-group row mt-2">
+                <div class="col-2 col-lg-1 text-center">
+                  <label for="password">
+                    <i class="fa fa-eye-slash fa-2x" aria-hidden="true"></i>
+                  </label>
+                </div>
+                <div class="col-10 col-lg-11">
+                  <input
+                    type="password"
+                    class="form-control"
+                    id="password"
+                    placeholder="كلمة المرور"
+                    required
+                    minlength="6"
+                  />
+                  <div class="invalid-feedback">
+                    يرجى إدخال كلمة مرور صحيحة (لا تقل عن 6 أحرف).
+                  </div>
                 </div>
               </div>
 
-              <div class="form-group mt-2">
-                <label for="captchaInput">أدخل رمز التحقق</label>
-                <div class="d-flex align-items-center">
-                  <span
-                    id="captchaDisplay"
-                    class="p-2 border bg-light rounded ms-2"
-                  >
-                    <!-- The captcha number will be displayed here -->
-                  </span>
+              <div class="form-group row mt-2">
+                <div class="col-2 col-lg-1 text-center">
+                  <label for="captchaInput">
+                    <i class="fa fa-shield fa-2x" aria-hidden="true"></i>
+                  </label>
+                </div>
+
+                <div class="col-7 col-lg-8">
                   <input
                     type="text"
                     class="form-control"
@@ -92,9 +111,18 @@
                     placeholder="رمز التحقق"
                     required
                   />
+                  <div class="invalid-feedback">
+                    يرجى إدخال رمز التحقق بشكل صحيح.
+                  </div>
                 </div>
-                <div class="invalid-feedback">
-                  يرجى إدخال رمز التحقق بشكل صحيح.
+
+                <div class="col-3">
+                  <span
+                    id="captchaDisplay"
+                    class="p-2 border bg-light rounded d-block text-center"
+                  >
+                    <!-- The captcha number will be displayed here -->
+                  </span>
                 </div>
               </div>
 
