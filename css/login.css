@@ -36,6 +36,14 @@ html {
   color: #6c757d;
 }
 
+.login-form .show-password {
+  position: absolute;
+  left: 24px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
 /* footer section style */
 .footer-login {
   height: 5vh;

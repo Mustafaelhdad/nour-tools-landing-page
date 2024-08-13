@@ -78,10 +78,10 @@
               <div class="form-group row mt-2">
                 <div class="col-2 col-lg-1 text-center">
                   <label for="password">
-                    <i class="fa fa-eye-slash fa-2x" aria-hidden="true"></i>
+                    <i class="fa fa-lock fa-2x" aria-hidden="true"></i>
                   </label>
                 </div>
-                <div class="col-10 col-lg-11">
+                <div class="col-10 col-lg-11 position-relative">
                   <input
                     type="password"
                     class="form-control"
@@ -90,6 +90,11 @@
                     required
                     minlength="6"
                   />
+                  <i
+                    id="togglePassword"
+                    class="fa fa-eye show-password"
+                    aria-hidden="true"
+                  ></i>
                   <div class="invalid-feedback">
                     يرجى إدخال كلمة مرور صحيحة (لا تقل عن 6 أحرف).
                   </div>
