@@ -11,6 +11,17 @@ html {
   height: 30vh;
 }
 
+.login-header img {
+  max-height: 180px;
+  max-width: 100%;
+  object-fit: cover;
+}
+
+.login-header .container,
+.login-header .row {
+  height: 100%;
+}
+
 /* form section style */
 .login-form {
   height: 65vh;
