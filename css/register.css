@@ -1,0 +1,25 @@
+* {
+  font-family: "El Messiri";
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* header section style */
+.register-header {
+  height: 30vh;
+}
+
+.register-header img {
+  max-height: 180px;
+  max-width: 100%;
+  object-fit: cover;
+}
+
+.register-header .container,
+.register-header .row {
+  height: 100%;
+}
+
+/* register form section */

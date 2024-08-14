@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+
+    <link rel="icon" href="./img/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@400..700&family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <link rel="stylesheet" href="./css/register.css" />
+    <title>تسجيل في الخدمة</title>
+  </head>
+  <body>
+    <header class="py-3 bg-light text-center register-header">
+      <div class="container h-100">
+        <div class="row h-100">
+          <div
+            class="col-12 col-md-8 mt-3 mt-md-0 d-flex align-items-center justify-content-center order-2 order-md-1"
+          >
+            <h4 class="mb-0 mt-2 mt-md-0">
+              طباعة كشوف الدرجات والمهارات واللجان
+            </h4>
+          </div>
+
+          <div
+            class="col-12 col-md-4 d-flex align-items-center justify-content-center order-1 order-md-2"
+          >
+            <img
+              src="./img/king2.webp"
+              class="img-fluid rounded-1"
+              alt="King Image"
+            />
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="register-from py-5">
+      <div class="container">
+        <h4 class="text-center mb-5">تسجيل في الموقع</h4>
+
+        <form action="" id="registerForm">
+          <div class="row">
+            <!-- اسم الادارة -->
+            <div class="form-group col-12 col-md-6 mb-3">
+              <div class="form-group row">
+                <div class="col-2 col-lg-1 text-center">
+                  <label for="educational-administration">
+                    <i class="fa fa-leanpub fa-2x" aria-hidden="true"></i>
+                  </label>
+                </div>
+
+                <div class="col-10 col-lg-11">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="educational-administration"
+                    aria-describedby="educational-administration"
+                    placeholder="اسم الإدارة التعليمية"
+                    required
+                  />
+
+                  <div class="invalid-feedback">
+                    يرجى إدخال الإدارة التعليمية.
+                  </div>
+                </div>
+              </div>
+
+              <div class="invalid-feedback">يرجى إدخال الإدارة التعليمية.</div>
+            </div>
+
+            <!-- اسم المدرسة -->
+            <div class="form-group col-12 col-md-6 mb-3">
+              <div class="form-group row">
+                <div class="col-2 col-lg-1 text-center">
+                  <label for="school">
+                    <i class="fa fa-building fa-2x" aria-hidden="true"></i>
+                  </label>
+                </div>
+
+                <div class="col-10 col-lg-11">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="school"
+                    aria-describedby="school"
+                    placeholder="اسم المدرسة"
+                    required
+                  />
+
+                  <div class="invalid-feedback">يرجى ادخال اسم المدرسة</div>
+                </div>
+              </div>
+
+              <div class="invalid-feedback">يرجى ادخال اسم المدرسة</div>
+            </div>
+
+            <!-- المرحلة التعليمية -->
+            <div class="form-group col-12 col-md-6 mb-3">
+              <div class="form-group row">
+                <div class="col-2 col-lg-1 text-center">
+                  <label for="learning-stage">
+                    <i
+                      class="fa fa-graduation-cap fa-2x"
+                      aria-hidden="true"
+                    ></i>
+                  </label>
+                </div>
+
+                <div class="col-10 col-lg-11">
+                  <select
+                    type="text"
+                    class="form-control"
+                    id="learning-stage"
+                    aria-describedby="learning-stage"
+                    placeholder="المرحلة الدراسية"
+                    required
+                  >
+                    <option value="" disabled selected>
+                      اختر المرحلة من القائمة
+                    </option>
+                    <option value="ابتدائي">ابتدائي</option>
+                    <option value="متوسط">متوسط</option>
+                  </select>
+
+                  <div class="invalid-feedback">
+                    يرجى اختيار المرحلة الدراسية.
+                  </div>
+                </div>
+              </div>
+
+              <div class="invalid-feedback">يرجى اختيار المرحلة الدراسية.</div>
+            </div>
+
+            <!-- اسم المدير/ة -->
+            <div class="form-group col-12 col-md-6 mb-3">
+              <div class="form-group row">
+                <div class="col-2 col-lg-1 text-center">
+                  <label for="admin">
+                    <i class="fa fa-user-circle-o fa-2x" aria-hidden="true"></i>
+                  </label>
+                </div>
+
+                <div class="col-10 col-lg-11">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="admin"
+                    aria-describedby="admin"
+                    placeholder="اسم المدير/ة"
+                    required
+                  />
+
+                  <div class="invalid-feedback">يرجى ادخال اسم المدير/ة</div>
+                </div>
+              </div>
+
+              <div class="invalid-feedback">يرجى ادخال اسم المدير/ة</div>
+            </div>
+
+            <!-- رقم الجوال -->
+            <div class="form-group col-12 col-md-6 mb-3">
+              <div class="form-group row">
+                <div class="col-2 col-lg-1 text-center">
+                  <label for="phone">
+                    <i class="fa fa-mobile fa-2x" aria-hidden="true"></i>
+                  </label>
+                </div>
+
+                <div class="col-10 col-lg-11">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="phone"
+                    aria-describedby="phone"
+                    placeholder="رقم الجوال"
+                    required
+                  />
+
+                  <div class="invalid-feedback">يرجى إدخال رقم الجوال.</div>
+                </div>
+              </div>
+
+              <div class="invalid-feedback">يرجى إدخال رقم الجوال.</div>
+            </div>
+
+            <!-- الجنس -->
+            <div class="form-group col-12 col-md-6 mb-3">
+              <div class="form-group row">
+                <div
+                  class="col-4 col-lg-4 text-center d-flex align-items-center"
+                >
+                  <label> الجنس </label>
+                </div>
+
+                <div class="col-8 col-lg-8 row d-flex align-items-center">
+                  <div class="col-4 form-check form-check-inline">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="gender"
+                      id="boys"
+                      value="boys"
+                    />
+                    <label class="form-check-label" for="boys">بنين</label>
+                  </div>
+                  <div class="col-4 form-check form-check-inline">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="gender"
+                      id="girls"
+                      value="girls"
+                    />
+                    <label class="form-check-label" for="girls">بنات</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- اسم المستخدم -->
+            <div class="form-group col-12 col-md-6 mb-3">
+              <div class="form-group row">
+                <div class="col-2 col-lg-1 text-center">
+                  <label for="user">
+                    <i class="fa fa-user fa-2x" aria-hidden="true"></i>
+                  </label>
+                </div>
+
+                <div class="col-10 col-lg-11">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="user"
+                    aria-describedby="user"
+                    placeholder="اسم المستخدم"
+                    required
+                  />
+
+                  <div class="invalid-feedback">يرجى إدخال اسم المستخدم.</div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-2 col-lg-1"></div>
+                <div class="col-10 col-lg-11">
+                  <div class="invalid-feedback">يرجى إدخال اسم المستخدم.</div>
+                  <p class="text-danger">
+                    يجب ان يكون 10 خانات. تشمل حرف انجليزي كبير وصغير والباقي
+                    أرقام
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- كلمة المرور -->
+            <div class="form-group col-12 col-md-6 mb-3">
+              <div class="form-group row">
+                <div class="col-2 col-lg-1 text-center">
+                  <label for="password">
+                    <i class="fa fa-lock fa-2x" aria-hidden="true"></i>
+                  </label>
+                </div>
+
+                <div class="col-10 col-lg-11">
+                  <input
+                    type="password"
+                    class="form-control"
+                    id="password"
+                    aria-describedby="password"
+                    placeholder="كلمة المرور"
+                    required
+                  />
+
+                  <div class="invalid-feedback">يرجى إدخال كلمة المرور.</div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-2 col-lg-1"></div>
+                <div class="col-10 col-lg-11">
+                  <div class="invalid-feedback">يرجى إدخال كلمة المرور.</div>
+                  <p class="text-danger">
+                    يجب أن تكون 8 خانات. تشمل حرف انجليزي كبير وصغير والباقي
+                    أرقام
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- الخدمات المطلوبة -->
+            <div class="form-group col-12 col-md-6 mb-3">
+              <div class="form-group row">
+                <div
+                  class="col-2 col-lg-1 text-center d-flex align-items-center"
+                >
+                  <!-- <label for="password"> -->
+                  <i class="fa fa-cogs fa-2x" aria-hidden="true"></i>
+                  <!-- </label> -->
+                </div>
+
+                <div class="col-10 col-lg-11">
+                  <h6>الخدمات المطلوبة</h6>
+                  <div class="card">
+                    <div class="card-body">
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="defaultCheck1"
+                        />
+                        <label class="form-check-label" for="defaultCheck1">
+                          طباعة كشوف الدرجات اشتراك 100 ريال
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="defaultCheck2"
+                        />
+                        <label class="form-check-label" for="defaultCheck2">
+                          طباعة كشوف المهارات اشتراك 100 ريال
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="defaultCheck3"
+                        />
+                        <label class="form-check-label" for="defaultCheck3">
+                          طباعة كشوف اللجان اشتراك 100 ريال
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="invalid-feedback">
+                    يرجى إدخال اختيار احد الخدمات.
+                  </div>
+                </div>
+              </div>
+
+              <div class="invalid-feedback">يرجى إدخال اختيار احد الخدمات.</div>
+            </div>
+
+            <!-- مكان فاضي -->
+            <div class="form-group col-12 col-md-6 mb-3"></div>
+          </div>
+
+          <h5 class="my-2 text-center">
+            كل مرحلة باشتراك ينتهي الاشتراك نهاية العام الدراسي.
+          </h5>
+
+          <div class="col-6 mx-auto text-center card">
+            <div class="card-body">
+              مصرف الانماء <br />
+              سلطان سعد صالح بن فارس <br />
+              برمجة وتطوير المواقع الإلكترونية <br />
+              رقم الحساب: <br />
+              68203424973000 <br />
+              رقم الايبان: <br />
+              SA0605000068203424973000
+            </div>
+          </div>
+
+          <div class="text-center d-flex justify-content-center gap-2 mt-2">
+            <button type="submit" class="btn btn-secondary">تسجيل</button>
+            <a
+              href="https://www.s204105.com/default.aspx"
+              class="btn btn-outline-secondary"
+              >عودة</a
+            >
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="bg-light py-2 text-center">
+      <div class="container">
+        Copyright &copy;
+        <a target="_blank" href="https://204105.COM">204105.COM</a>
+      </div>
+    </footer>
+  </body>
+</html>
