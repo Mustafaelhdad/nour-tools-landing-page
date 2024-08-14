@@ -214,6 +214,7 @@
                       name="gender"
                       id="boys"
                       value="boys"
+                      required
                     />
                     <label class="form-check-label" for="boys">بنين</label>
                   </div>
@@ -224,6 +225,7 @@
                       name="gender"
                       id="girls"
                       value="girls"
+                      required
                     />
                     <label class="form-check-label" for="girls">بنات</label>
                   </div>
@@ -249,6 +251,7 @@
                     class="form-control"
                     id="user"
                     aria-describedby="user"
+                    pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{10,}"
                     placeholder="اسم المستخدم"
                     required
                   />
@@ -284,6 +287,7 @@
                     class="form-control"
                     id="password"
                     aria-describedby="password"
+                    minlength="8"
                     placeholder="كلمة المرور"
                     required
                   />
@@ -324,9 +328,9 @@
                           class="form-check-input"
                           type="checkbox"
                           value=""
-                          id="defaultCheck1"
+                          id="service1"
                         />
-                        <label class="form-check-label" for="defaultCheck1">
+                        <label class="form-check-label" for="service1">
                           طباعة كشوف الدرجات اشتراك 100 ريال
                         </label>
                       </div>
@@ -335,9 +339,9 @@
                           class="form-check-input"
                           type="checkbox"
                           value=""
-                          id="defaultCheck2"
+                          id="service2"
                         />
-                        <label class="form-check-label" for="defaultCheck2">
+                        <label class="form-check-label" for="service2">
                           طباعة كشوف المهارات اشتراك 100 ريال
                         </label>
                       </div>
@@ -346,9 +350,9 @@
                           class="form-check-input"
                           type="checkbox"
                           value=""
-                          id="defaultCheck3"
+                          id="service3"
                         />
-                        <label class="form-check-label" for="defaultCheck3">
+                        <label class="form-check-label" for="service3">
                           طباعة كشوف اللجان اشتراك 100 ريال
                         </label>
                       </div>
@@ -358,6 +362,9 @@
                   <div class="invalid-feedback">
                     يرجى إدخال اختيار احد الخدمات.
                   </div>
+                </div>
+                <div id="servicesError" class="invalid-feedback d-none">
+                  يرجى اختيار احد الخدمات.
                 </div>
               </div>
 
@@ -403,5 +410,7 @@
         <a target="_blank" href="https://204105.COM">204105.COM</a>
       </div>
     </footer>
+
+    <script src="./js/main.js"></script>
   </body>
 </html>

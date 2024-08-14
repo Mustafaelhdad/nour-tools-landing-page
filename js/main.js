@@ -86,7 +86,7 @@ document
     const icon = this;
 
     // Toggle the type attribute
-    if (passwordInput.type === "password") {
+    if (passwordInput?.type === "password") {
       passwordInput.type = "text";
       icon.classList.remove("fa-eye");
       icon.classList.add("fa-eye-slash");
@@ -96,3 +96,47 @@ document
       icon.classList.add("fa-eye");
     }
   });
+
+// register form validation
+document
+  .getElementById("registerForm")
+  .addEventListener("submit", function (e) {
+    console.log("submitted");
+
+    // Custom validation for checkboxes
+    let servicesChecked = document.querySelectorAll(
+      'input[type="checkbox"]:checked'
+    ).length;
+    let servicesError = document.getElementById("servicesError");
+
+    if (servicesChecked === 0) {
+      servicesError?.classList.remove("d-none");
+      e.preventDefault(); // Prevent form submission
+    } else {
+      servicesError?.classList.add("d-none");
+    }
+  });
+
+// Bootstrap form validation
+(() => {
+  "use strict";
+
+  // Fetch all the forms we want to apply custom Bootstrap validation styles to
+  let forms = document.querySelectorAll(".needs-validation");
+
+  // Loop over them and prevent submission
+  Array.prototype.slice.call(forms).forEach((form) => {
+    form.addEventListener(
+      "submit",
+      function (event) {
+        if (!form.checkValidity()) {
+          event.preventDefault();
+          event.stopPropagation();
+        }
+
+        form.classList.add("was-validated");
+      },
+      false
+    );
+  });
+})();
