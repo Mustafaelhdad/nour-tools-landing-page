@@ -25,4 +25,5 @@ html {
 /* register form section */
 .register-from {
   background-color: #ffeada;
+  background-image: url("../img/bg.jpg");
 }
