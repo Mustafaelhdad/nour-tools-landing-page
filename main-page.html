@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="icon" href="./img/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@400..700&family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/main-page.css" />
+    <title>الشاشة الرئيسية</title>
+  </head>
+  <body>
+    <header class="py-3 bg-light text-center main-page-header">
+      <div class="container h-100">
+        <div class="row h-100">
+          <div
+            class="col-12 col-md-8 mt-3 mt-md-0 d-flex align-items-center justify-content-center order-2 order-md-1"
+          >
+            <h4 class="mb-0 mt-2 mt-md-0">
+              طباعة كشوف الدرجات والمهارات واللجان
+            </h4>
+          </div>
+
+          <div
+            class="col-12 col-md-4 d-flex align-items-center justify-content-center order-1 order-md-2"
+          >
+            <img
+              src="./img/king2.webp"
+              class="img-fluid rounded-1"
+              alt="King Image"
+            />
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="control-section-main-page py-5 position-relative">
+      <div
+        class="d-flex flex-column justify-content-center align-items-center gap-2 p-3 info-popup-toggler"
+      >
+        <button
+          type="button"
+          class="btn btn-danger d-inline p-1 py-0"
+          data-toggle="modal"
+          data-target="#exampleModalCenter"
+          title="كيفية الاستخدام"
+        >
+          <i class="fa fa-info-circle fa-2x" aria-hidden="true"></i>
+        </button>
+
+        <span class="d-none d-md-block">كيفية الاستخدام</span>
+      </div>
+
+      <div class="mx-auto col-10 col-md-5 mb-4">
+        <h4>ادارة التعليم: <span class="text-primary">الرياض</span></h4>
+        <h4>
+          اسم المدرسة:
+          <span class="text-primary">مدرسة حماصة الثانوية بنين</span>
+        </h4>
+      </div>
+
+      <div class="row mx-0">
+        <div class="mx-auto col-8 col-md-3 d-flex flex-column gap-2 px-0">
+          <a
+            href="https://tuss13.com/School_Info.aspx"
+            class="btn btn-secondary"
+          >
+            <div
+              class="link-control-container d-flex justify-content-between align-items-center mx-auto"
+            >
+              <span class="ms-2">بيانات المدرسة</span>
+              <i class="fa fa-building-o" aria-hidden="true"></i>
+            </div>
+          </a>
+
+          <a
+            href="https://tuss13.com/Student_Data.aspx"
+            class="btn btn-secondary"
+          >
+            <div
+              class="link-control-container d-flex justify-content-between align-items-center mx-auto"
+            >
+              <span class="ms-2">بيانات الطلاب</span>
+              <i class="fa fa-users" aria-hidden="true"></i>
+            </div>
+          </a>
+
+          <a
+            href="https://tuss13.com/Print_Reports_Student.aspx"
+            class="btn btn-secondary"
+          >
+            <div
+              class="link-control-container d-flex justify-content-between align-items-center mx-auto"
+            >
+              <span class="ms-2">تقارير الطلاب</span>
+              <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+            </div>
+          </a>
+
+          <a
+            href="https://tuss13.com/Legan/Set_Legan.aspx"
+            class="btn btn-secondary"
+          >
+            <div
+              class="link-control-container d-flex justify-content-between align-items-center mx-auto"
+            >
+              <span class="ms-2">لجان الاختبارات</span>
+              <i class="fa fa-map-marker" aria-hidden="true"></i>
+            </div>
+          </a>
+
+          <a
+            href="https://tuss13.com/Mahart/Print_Maharat.aspx"
+            class="btn btn-secondary"
+          >
+            <div
+              class="link-control-container d-flex justify-content-between align-items-center mx-auto"
+            >
+              <span class="ms-2">كشوف المهارات</span>
+              <i class="fa fa-table" aria-hidden="true"></i>
+            </div>
+          </a>
+
+          <a
+            href="https://tuss13.com/Print_Repots.aspx"
+            class="btn btn-secondary"
+          >
+            <div
+              class="link-control-container d-flex justify-content-between align-items-center mx-auto"
+            >
+              <span class="ms-2">كشوف الدرجات</span>
+              <i class="fa fa-graduation-cap" aria-hidden="true"></i>
+            </div>
+          </a>
+
+          <a class="btn btn-outline-secondary mt-3">
+            <div
+              class="link-control-container d-flex justify-content-between align-items-center mx-auto"
+            >
+              <span class="ms-2">تسجيل الخروج</span>
+              <i class="fa fa-sign-out" aria-hidden="true"></i>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="exampleModalCenter"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalCenterTitle"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">
+              كيفية الاستخدام
+            </h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+
+          <div class="modal-body">
+            <div class="student-guide mb-2">
+              <h5>طريقة سحب الاسماء من الارشاد الطلابي في نور :</h5>
+              <ol>
+                <li>الدخول على نور بحساب المدير/ة .</li>
+                <li>التقارير .</li>
+                <li>التقارير الاحصائية .</li>
+                <li>البيانات الخاصة بالارشاد الطلابي .</li>
+                <li>تصدير الملف باسم StudentGuidance.xls .</li>
+              </ol>
+            </div>
+
+            <div class="student-guide mb-2">
+              <h5>طريقة سحب الاسماء من تقارير الطلاب في نور :</h5>
+              <ol>
+                <li>الدخول على نور بحساب المدير/ة .</li>
+                <li>التقارير .</li>
+                <li>تقارير الطلاب .</li>
+                <li>كشف الطلاب .</li>
+                <li>تصدير الملف باسم EL_StudentInfoReport.xlsx .</li>
+              </ol>
+            </div>
+
+            <div class="student-guide">
+              <h5>في الموقع في شاشة بيانات الطلاب :</h5>
+              <ol>
+                <li>بيانات الطلاب .</li>
+                <li>استيراد البيانات من اكسل .</li>
+                <li>يتم اختيار المرحلة .</li>
+                <li>استيراد البيانات من ملف StudentGuidance.xls .</li>
+                <li>حفظ .</li>
+              </ol>
+            </div>
+          </div>
+
+          <div class="modal-footer justify-content-start">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              غلق
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <footer class="bg-light py-2 text-center">
+      <div class="container">
+        Copyright &copy;
+        <a target="_blank" href="https://204105.COM">204105.COM</a>
+      </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+
+    <!-- Popper.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  </body>
+</html>
