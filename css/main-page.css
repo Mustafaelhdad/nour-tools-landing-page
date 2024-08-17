@@ -53,3 +53,9 @@ html {
     height: auto;
   }
 }
+
+@media (min-width: 720px) and (max-width: 985px) {
+  .link-control-container {
+    max-width: 30% !important;
+  }
+}
