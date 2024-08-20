@@ -1,0 +1,29 @@
+* {
+  font-family: "El Messiri";
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Animation keyframes for fading in */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Class to apply animation */
+.animate-input {
+  animation: fadeIn 1s ease forwards;
+}
+
+.school-info {
+  background-color: #ffeada;
+  background-image: url("../img/bg.jpg");
+}
