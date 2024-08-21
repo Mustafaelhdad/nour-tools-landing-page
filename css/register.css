@@ -27,3 +27,81 @@ html {
   background-color: #ffeada;
   background-image: url("../img/bg.jpg");
 }
+
+* {
+  font-family: "El Messiri";
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.register-from {
+  background-color: #ffeada;
+}
+
+/* Animation keyframes for fading in */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Animation keyframes for fading in with slide down effect */
+@keyframes fadeInSlideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Apply animation to the page header */
+h4.text-center,
+h5.my-2 {
+  opacity: 0; /* Start with a hidden header */
+  animation: fadeInSlideDown 1s ease forwards;
+}
+
+/* Apply animation to form labels */
+form#registerForm label,
+form#registerForm input,
+form#registerForm select,
+form#registerForm .form-check-label {
+  opacity: 0; /* Start with hidden labels and inputs */
+  animation: fadeIn 1s ease forwards;
+}
+
+/* Specific delays for each row or you can customize as per your design */
+form#registerForm .form-group:nth-child(1) label,
+form#registerForm .form-group:nth-child(1) input,
+form#registerForm .form-group:nth-child(1) select,
+form#registerForm .form-group:nth-child(1) .form-check-label {
+  animation-delay: 0.3s;
+}
+form#registerForm .form-group:nth-child(2) label,
+form#registerForm .form-group:nth-child(2) input,
+form#registerForm .form-group:nth-child(2) select,
+form#registerForm .form-group:nth-child(2) .form-check-label {
+  animation-delay: 0.6s;
+}
+form#registerForm .form-group:nth-child(3) label,
+form#registerForm .form-group:nth-child(3) input,
+form#registerForm .form-group:nth-child(3) select,
+form#registerForm .form-group:nth-child(3) .form-check-label {
+  animation-delay: 0.9s;
+}
+form#registerForm .form-group:nth-child(4) label,
+form#registerForm .form-group:nth-child(4) input,
+form#registerForm .form-group:nth-child(4) select,
+form#registerForm .form-group:nth-child(4) .form-check-label {
+  animation-delay: 1.2s;
+}
