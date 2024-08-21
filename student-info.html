@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+
+    <link rel="icon" href="./img/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@400..700&family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <link rel="stylesheet" href="./css/student-info.css" />
+    <title>بيانات الطلاب</title>
+  </head>
+  <body>
+    <section class="school-info py-5">
+      <div class="container">
+        <h4 class="text-center mb-5">بيانات المدرسة</h4>
+
+        <form action="" id="schoolInfo">
+          <div class="row">
+            <!-- اسم المرحلة -->
+            <div class="form-group col-12 col-md-6 mb-3">
+              <div class="form-group row">
+                <div
+                  class="col-2 col-lg-1 text-center d-flex align-items-end justify-content-center"
+                >
+                  <label for="learning-stage">
+                    <i class="fa fa-flag fa-2x" aria-hidden="true"></i>
+                  </label>
+                </div>
+
+                <div class="col-10 col-lg-11">
+                  <label for="learning-stage"> المرحلة </label>
+                  <select
+                    type="text"
+                    class="form-control"
+                    id="learning-stage"
+                    aria-describedby="learning-stage"
+                    placeholder="المرحلة الدراسية"
+                    required
+                    disabled
+                  >
+                    <option value="" disabled>اختر المرحلة من القائمة</option>
+                    <option selected value="ابتدائي">ابتدائي</option>
+                    <option value="متوسط">متوسط</option>
+                  </select>
+
+                  <div class="invalid-feedback">
+                    يرجى اختيار المرحلة الدراسية.
+                  </div>
+                </div>
+              </div>
+
+              <div class="invalid-feedback">يرجى اختيار المرحلة الدراسية.</div>
+            </div>
+
+            <!-- مكان فاضي -->
+            <div
+              class="form-group col-12 col-md-6 mb-3 d-md-flex align-items-md-end"
+            >
+              <div class="row">
+                <div class="col-2 col-lg-1"></div>
+                <div class="col-10 col-lg-11 d-flex align-items-end">
+                  <h5>عدد طلاب الصف : 373</h5>
+                </div>
+              </div>
+            </div>
+
+            <!-- اسم الفصل -->
+            <div class="form-group col-12 col-md-6 mb-3">
+              <div class="form-group row">
+                <div
+                  class="col-2 col-lg-1 text-center d-flex align-items-end justify-content-center"
+                >
+                  <label for="school-class">
+                    <i
+                      class="fa fa-graduation-cap fa-2x"
+                      aria-hidden="true"
+                    ></i>
+                  </label>
+                </div>
+
+                <div class="col-10 col-lg-11">
+                  <label for="school-class"> الصف </label>
+                  <select
+                    type="text"
+                    class="form-control"
+                    id="school-class"
+                    aria-describedby="school-class"
+                    placeholder="الصف"
+                    required
+                  >
+                    <option value="" disabled selected>اختر الصف</option>
+                    <option value="class4">الرابع الإبتدائي</option>
+                    <option value="class5">الخامس الإبتدائي</option>
+                    <option value="class6">السادس الإبتدائي</option>
+                  </select>
+
+                  <div class="invalid-feedback">يرجى اختيار الصف.</div>
+                </div>
+              </div>
+
+              <div class="invalid-feedback">يرجى اختيار الصف.</div>
+            </div>
+
+            <!-- مكان فاضي -->
+            <div
+              class="form-group col-12 col-md-6 mb-3 d-md-flex align-items-md-end"
+            >
+              <div class="row">
+                <div class="col-2 col-lg-1"></div>
+                <div class="col-10 col-lg-11 d-flex align-items-end">
+                  <h5>عدد طلاب الصف : 83</h5>
+                </div>
+              </div>
+            </div>
+
+            <!-- اسم القسم -->
+            <div class="form-group col-12 col-md-6 mb-3">
+              <div class="form-group row">
+                <div
+                  class="col-2 col-lg-1 text-center d-flex align-items-end justify-content-center"
+                >
+                  <label for="department">
+                    <i class="fa fa-sitemap fa-2x" aria-hidden="true"></i>
+                  </label>
+                </div>
+
+                <div class="col-10 col-lg-11">
+                  <label for="department"> القسم </label>
+                  <select
+                    type="text"
+                    class="form-control"
+                    id="department"
+                    aria-describedby="department"
+                    placeholder="القسم"
+                    required
+                    disabled
+                  >
+                    <option value="" disabled selected>اختر القسم</option>
+                    <option value="boys-dep" disabled selected>
+                      عام بنين - We can Mc Graw Hill
+                    </option>
+                  </select>
+
+                  <div class="invalid-feedback">يرجى اختيار القسم.</div>
+                </div>
+              </div>
+
+              <div class="invalid-feedback">يرجى اختيار القسم.</div>
+            </div>
+
+            <!-- مكان فاضي -->
+            <div
+              class="form-group col-12 col-md-6 mb-3 d-md-flex align-items-md-end"
+            ></div>
+
+            <!-- اسم الفصل -->
+            <div class="form-group col-12 col-md-6 mb-3">
+              <div class="form-group row">
+                <div
+                  class="col-2 col-lg-1 text-center d-flex align-items-end justify-content-center"
+                >
+                  <label for="school-class-number">
+                    <i class="fa fa-users fa-2x" aria-hidden="true"></i>
+                  </label>
+                </div>
+
+                <div class="col-10 col-lg-11">
+                  <label for="school-class-number"> الفصل </label>
+                  <select
+                    type="text"
+                    class="form-control"
+                    id="school-class-number"
+                    aria-describedby="school-class-number"
+                    placeholder="الفصل"
+                    required
+                  >
+                    <option value="" selected>اختر الفصل</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                  </select>
+
+                  <div class="invalid-feedback">يرجى اختيار الفصل.</div>
+                </div>
+              </div>
+
+              <div class="invalid-feedback">يرجى اختيار الفصل.</div>
+            </div>
+
+            <!-- مكان فاضي -->
+            <div
+              class="form-group col-12 col-md-6 mb-3 d-md-flex align-items-md-end"
+            ></div>
+
+            <!-- طلاب الفصل -->
+            <div class="form-group col-12 col-md-6 mb-3">
+              <div class="form-group row">
+                <div
+                  class="col-2 col-lg-1 text-center d-flex align-items-end justify-content-center"
+                >
+                  <label for="school-class-number">
+                    <i class="fa fa-user fa-2x" aria-hidden="true"></i>
+                  </label>
+                </div>
+
+                <div class="col-10 col-lg-11">
+                  <label for="school-class-number"> طلاب الفصل </label>
+                  <select
+                    type="text"
+                    class="form-control"
+                    id="school-class-number"
+                    aria-describedby="school-class-number"
+                    placeholder="طلاب الفصل"
+                    required
+                  >
+                    <option value="" selected>اختر الطالب</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                  </select>
+
+                  <div class="invalid-feedback">يرجى اختيار الطالب.</div>
+                </div>
+              </div>
+
+              <div class="invalid-feedback">يرجى اختيار الطالب.</div>
+            </div>
+
+            <!-- مكان فاضي -->
+            <div
+              class="form-group col-12 col-md-6 mb-3 d-md-flex align-items-md-end"
+            >
+              <div class="row">
+                <div class="col-2 col-lg-1"></div>
+                <div class="col-10 col-lg-11 d-flex align-items-end">
+                  <h5>عدد طلاب الفصل : 25</h5>
+                </div>
+              </div>
+            </div>
+
+            <!-- الاسم -->
+            <div class="form-group col-12 col-md-6 mb-3">
+              <div class="form-group row">
+                <div
+                  class="col-2 col-lg-1 text-center d-flex align-items-end justify-content-center"
+                >
+                  <label for="name">
+                    <i
+                      class="fa fa-pencil-square-o fa-2x"
+                      aria-hidden="true"
+                    ></i>
+                  </label>
+                </div>
+
+                <div class="col-10 col-lg-11">
+                  <label for="name"> الاسم </label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="name"
+                    aria-describedby="name"
+                    placeholder="الاسم"
+                    value=""
+                    required
+                  />
+
+                  <div class="invalid-feedback">يرجى اختيار الاسم.</div>
+                </div>
+              </div>
+
+              <div class="invalid-feedback">يرجى اختيار الاسم.</div>
+            </div>
+
+            <!-- رقم الهوية -->
+            <div class="form-group col-12 col-md-6 mb-3">
+              <div class="form-group row">
+                <div
+                  class="col-2 col-lg-1 text-center d-flex align-items-end justify-content-center"
+                >
+                  <label for="person-id">
+                    <i class="fa fa-id-card-o fa-2x" aria-hidden="true"></i>
+                  </label>
+                </div>
+
+                <div class="col-10 col-lg-11">
+                  <label for="person-id"> رقم الهوية </label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="person-id"
+                    aria-describedby="person-id"
+                    placeholder="رقم الهوية"
+                    value=""
+                    required
+                  />
+
+                  <div class="invalid-feedback">يرجى اختيار رقم الهوية.</div>
+                </div>
+              </div>
+
+              <div class="invalid-feedback">يرجى اختيار رقم الهوية.</div>
+            </div>
+
+            <!-- رقم الجوال -->
+            <div class="form-group col-12 col-md-6 mb-3">
+              <div class="form-group row">
+                <div
+                  class="col-2 col-lg-1 text-center d-flex align-items-end justify-content-center"
+                >
+                  <label for="phone">
+                    <i class="fa fa-mobile fa-2x" aria-hidden="true"></i>
+                  </label>
+                </div>
+
+                <div class="col-10 col-lg-11">
+                  <label for="phone"> رقم الجوال </label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="phone"
+                    aria-describedby="phone"
+                    placeholder="رقم الجوال"
+                    value="0505204105"
+                    required
+                  />
+
+                  <div class="invalid-feedback">يرجى إدخال رقم الجوال.</div>
+                </div>
+              </div>
+
+              <div class="invalid-feedback">يرجى إدخال رقم الجوال.</div>
+            </div>
+
+            <!-- رقم جوال اخر -->
+            <div class="form-group col-12 col-md-6 mb-3">
+              <div class="form-group row">
+                <div
+                  class="col-2 col-lg-1 text-center d-flex align-items-end justify-content-center"
+                >
+                  <label for="second-phone">
+                    <i class="fa fa-mobile fa-2x" aria-hidden="true"></i>
+                  </label>
+                </div>
+
+                <div class="col-10 col-lg-11">
+                  <label for="second-phone"> رقم جوال اخر </label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="second-phone"
+                    aria-describedby="second-phone"
+                    placeholder="رقم جوال اخر"
+                    required
+                  />
+                </div>
+              </div>
+            </div>
+
+            <!-- هاتف المنزل -->
+            <div class="form-group col-12 col-md-6 mb-3">
+              <div class="form-group row">
+                <div
+                  class="col-2 col-lg-1 text-center d-flex align-items-end justify-content-center"
+                >
+                  <label for="home-phone">
+                    <i class="fa fa-phone fa-2x" aria-hidden="true"></i>
+                  </label>
+                </div>
+
+                <div class="col-10 col-lg-11">
+                  <label for="home-phone"> هاتف المنزل </label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="home-phone"
+                    aria-describedby="home-phone"
+                    placeholder="هاتف المنزل"
+                    required
+                  />
+                </div>
+              </div>
+            </div>
+
+            <!-- الجنسية -->
+            <div class="form-group col-12 col-md-6 mb-3">
+              <div class="form-group row">
+                <div
+                  class="col-2 col-lg-1 text-center d-flex align-items-end justify-content-center"
+                >
+                  <label for="nationality">
+                    <i class="fa fa-globe fa-2x" aria-hidden="true"></i>
+                  </label>
+                </div>
+
+                <div class="col-10 col-lg-11">
+                  <label for="nationality"> الجنسية </label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="nationality"
+                    aria-describedby="nationality"
+                    placeholder="الجنسية"
+                    value=""
+                    required
+                  />
+
+                  <div class="invalid-feedback">يرجى ادخال الجنسية.</div>
+                </div>
+              </div>
+
+              <div class="invalid-feedback">يرجى ادخال الجنسية.</div>
+            </div>
+
+            <!-- تاريخ الميلاد -->
+            <div class="form-group col-12 col-md-6 mb-3">
+              <div class="form-group row">
+                <div
+                  class="col-2 col-lg-1 text-center d-flex align-items-end justify-content-center"
+                >
+                  <label for="birth-date">
+                    <i class="fa fa-calendar fa-2x" aria-hidden="true"></i>
+                  </label>
+                </div>
+
+                <div class="col-10 col-lg-11">
+                  <label for="birth-date"> تاريخ ميلاد هجري </label>
+                  <input
+                    type="date"
+                    class="form-control"
+                    id="birth-date"
+                    aria-describedby="birth-date"
+                    placeholder="تاريخ ميلاد هجري"
+                    value=""
+                    required
+                  />
+
+                  <div class="invalid-feedback">
+                    يرجى ادخال تاريخ ميلاد هجري.
+                  </div>
+                </div>
+              </div>
+
+              <div class="invalid-feedback">يرجى ادخال تاريخ ميلاد هجري.</div>
+            </div>
+          </div>
+
+          <div class="d-flex justify-content-center row gx-2 mt-2 mx-md-auto">
+            <button
+              type="button"
+              class="btn btn-outline-danger col-12 col-md-auto mb-2 mb-md-0 ms-md-2"
+            >
+              <i class="fa fa-user-times" aria-hidden="true"></i> حذف طالب
+            </button>
+            <button
+              type="button"
+              class="btn btn-danger col-12 col-md-auto mb-2 mb-md-0 ms-md-2"
+            >
+              <i class="fa fa-trash" aria-hidden="true"></i> حذف صف
+            </button>
+            <button
+              type="button"
+              class="btn btn-warning col-12 col-md-auto mb-2 mb-md-0 ms-md-2"
+            >
+              <i class="fa fa-trash" aria-hidden="true"></i> حذف جميع الطلاب
+            </button>
+            <button
+              type="submit"
+              class="btn btn-secondary col-12 col-md-auto mb-2 mb-md-0 ms-md-2"
+            >
+              حفظ
+            </button>
+            <button
+              type="button"
+              class="btn btn-success col-12 col-md-auto mb-2 mb-md-0 ms-md-2"
+            >
+              <i class="fa fa-external-link" aria-hidden="true"></i> استيراد
+            </button>
+            <a
+              href="https://www.s204105.com/default.aspx"
+              class="btn btn-outline-secondary col-12 col-md-auto mb-2 mb-md-0 ms-md-2"
+              >عودة</a
+            >
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        const inputs = document.querySelectorAll('input, select');
+        inputs.forEach(input => {
+          input.classList.add('animate-input');
+        });
+      });
+    </script>
+  </body>
+</html>
