@@ -461,30 +461,43 @@
             <button
               type="button"
               class="btn btn-outline-danger col-12 col-md-auto mb-2 mb-md-0 ms-md-2"
+              id="deleteStudentBtn"
+              data-bs-toggle="modal"
+              data-bs-target="#deleteStudentModal"
             >
               <i class="fa fa-user-times" aria-hidden="true"></i> حذف طالب
             </button>
             <button
               type="button"
               class="btn btn-danger col-12 col-md-auto mb-2 mb-md-0 ms-md-2"
+              id="deleteClassBtn"
+              data-bs-toggle="modal"
+              data-bs-target="#deleteClassModal"
             >
               <i class="fa fa-trash" aria-hidden="true"></i> حذف صف
             </button>
             <button
               type="button"
               class="btn btn-warning col-12 col-md-auto mb-2 mb-md-0 ms-md-2"
+              id="deleteAllStudentsBtn"
+              data-bs-toggle="modal"
+              data-bs-target="#deleteAllStudentsModal"
             >
               <i class="fa fa-trash" aria-hidden="true"></i> حذف جميع الطلاب
             </button>
             <button
               type="submit"
               class="btn btn-secondary col-12 col-md-auto mb-2 mb-md-0 ms-md-2"
+              id="saveBtn"
             >
               حفظ
             </button>
             <button
               type="button"
               class="btn btn-success col-12 col-md-auto mb-2 mb-md-0 ms-md-2"
+              id="importBtn"
+              data-bs-toggle="modal"
+              data-bs-target="#importModal"
             >
               <i class="fa fa-external-link" aria-hidden="true"></i> استيراد
             </button>
@@ -498,13 +511,290 @@
       </div>
     </section>
 
+    <!-- Delete Student Modal -->
+    <div
+      class="modal fade"
+      id="deleteStudentModal"
+      tabindex="-1"
+      aria-labelledby="deleteStudentModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header d-flex justify-content-between">
+            <h5 class="modal-title" id="deleteStudentModalLabel">
+              تأكيد حذف الطالب
+            </h5>
+            <button
+              type="button"
+              class="btn-close m-0"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">هل أنت متأكد من حذف الطالب؟</div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              إلغاء
+            </button>
+            <button
+              type="button"
+              class="btn btn-danger"
+              id="confirmDeleteStudent"
+            >
+              حذف
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Delete Class Modal -->
+    <div
+      class="modal fade"
+      id="deleteClassModal"
+      tabindex="-1"
+      aria-labelledby="deleteClassModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header d-flex justify-content-between">
+            <h5 class="modal-title" id="deleteClassModalLabel">
+              تأكيد حذف الصف
+            </h5>
+            <button
+              type="button"
+              class="btn-close m-0"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">هل أنت متأكد من حذف الصف؟</div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              إلغاء
+            </button>
+            <button
+              type="button"
+              class="btn btn-danger"
+              id="confirmDeleteClass"
+            >
+              حذف
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Delete All Students Modal -->
+    <div
+      class="modal fade"
+      id="deleteAllStudentsModal"
+      tabindex="-1"
+      aria-labelledby="deleteAllStudentsModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header d-flex justify-content-between">
+            <h5 class="modal-title" id="deleteAllStudentsModalLabel">
+              تأكيد حذف جميع الطلاب
+            </h5>
+            <button
+              type="button"
+              class="btn-close m-0"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">هل أنت متأكد من حذف جميع الطلاب؟</div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              إلغاء
+            </button>
+            <button
+              type="button"
+              class="btn btn-danger"
+              id="confirmDeleteAllStudents"
+            >
+              حذف
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Import Modal -->
+    <div
+      class="modal fade"
+      id="importModal"
+      tabindex="-1"
+      aria-labelledby="importModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header d-flex justify-content-between">
+            <h5 class="modal-title" id="importModalLabel">
+              تأكيد استيراد البيانات
+            </h5>
+            <button
+              type="button"
+              class="btn-close m-0"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">هل تريد بالتأكيد استيراد البيانات؟</div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              إلغاء
+            </button>
+            <button type="button" class="btn btn-success" id="confirmImport">
+              استيراد
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Save Success Modal -->
+    <div
+      class="modal fade"
+      id="saveSuccessModal"
+      tabindex="-1"
+      aria-labelledby="saveSuccessModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header d-flex justify-content-between">
+            <h5 class="modal-title" id="saveSuccessModalLabel">
+              تم الحفظ بنجاح
+            </h5>
+            <button
+              type="button"
+              class="btn-close m-0"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">تم حفظ البيانات بنجاح.</div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              إغلاق
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Save Failure Modal -->
+    <div
+      class="modal fade"
+      id="saveFailureModal"
+      tabindex="-1"
+      aria-labelledby="saveFailureModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header d-flex justify-content-between">
+            <h5 class="modal-title" id="saveFailureModalLabel">فشل الحفظ</h5>
+            <button
+              type="button"
+              class="btn-close m-0"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">فشل الحفظ. يرجى المحاولة مرة أخرى.</div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              إغلاق
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
     <script>
       document.addEventListener("DOMContentLoaded", function() {
-        const inputs = document.querySelectorAll('input, select');
-        inputs.forEach(input => {
-          input.classList.add('animate-input');
+        // Delete Student Confirmation
+        document.getElementById('confirmDeleteStudent').addEventListener('click', function() {
+          // Handle student deletion logic
+          alert('تم حذف الطالب بنجاح.');
+          var deleteStudentModal = new bootstrap.Modal(document.getElementById('deleteStudentModal'));
+          deleteStudentModal.hide();
+        });
+
+        // Delete Class Confirmation
+        document.getElementById('confirmDeleteClass').addEventListener('click', function() {
+          // Handle class deletion logic
+          alert('تم حذف الصف بنجاح.');
+          var deleteClassModal = new bootstrap.Modal(document.getElementById('deleteClassModal'));
+          deleteClassModal.hide();
+        });
+
+        // Delete All Students Confirmation
+        document.getElementById('confirmDeleteAllStudents').addEventListener('click', function() {
+          // Handle all students deletion logic
+          alert('تم حذف جميع الطلاب بنجاح.');
+          var deleteAllStudentsModal = new bootstrap.Modal(document.getElementById('deleteAllStudentsModal'));
+          deleteAllStudentsModal.hide();
+        });
+
+        // Import Confirmation
+        document.getElementById('confirmImport').addEventListener('click', function() {
+          // Handle import logic
+          alert('تم استيراد البيانات بنجاح.');
+          var importModal = new bootstrap.Modal(document.getElementById('importModal'));
+          importModal.hide();
+        });
+
+        // Handle Save Action
+        document.getElementById('schoolInfo').addEventListener('submit', function(event) {
+          event.preventDefault(); // Prevent the form from submitting normally
+
+          // Simulate save operation
+          let isSaveSuccessful = true; // Change this based on actual save operation result
+
+          if (isSaveSuccessful) {
+            var saveSuccessModal = new bootstrap.Modal(document.getElementById('saveSuccessModal'));
+            saveSuccessModal.show();
+          } else {
+            var saveFailureModal = new bootstrap.Modal(document.getElementById('saveFailureModal'));
+            saveFailureModal.show();
+          }
         });
       });
     </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
   </body>
 </html>
