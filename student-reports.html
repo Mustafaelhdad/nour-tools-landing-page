@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/bootstrap.min.css" />
-
     <link rel="icon" href="./img/favicon.ico" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -16,19 +15,19 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-
     <link rel="stylesheet" href="./css/student-info.css" />
     <title>تقارير الطلاب</title>
   </head>
   <body>
     <section class="student-reports py-5">
-      <div class="container">
+      <div class="container custom-container">
         <h4 class="text-center mb-5">تقارير الطلاب</h4>
 
-        <form action="">
+        <form action="" id="studentReports">
           <div class="row">
-            <!-- اسم المرحلة -->
+            <!-- Left Column -->
             <div class="col-12 col-md-6">
+              <!-- المرحلة -->
               <div class="form-group mb-3">
                 <div class="form-group row">
                   <div
@@ -58,10 +57,6 @@
                       يرجى اختيار المرحلة الدراسية.
                     </div>
                   </div>
-                </div>
-
-                <div class="invalid-feedback">
-                  يرجى اختيار المرحلة الدراسية.
                 </div>
               </div>
 
@@ -105,8 +100,6 @@
                     <div class="invalid-feedback">يرجى اختيار الصف.</div>
                   </div>
                 </div>
-
-                <div class="invalid-feedback">يرجى اختيار الصف.</div>
               </div>
 
               <!-- اسم القسم -->
@@ -139,8 +132,6 @@
                     <div class="invalid-feedback">يرجى اختيار القسم.</div>
                   </div>
                 </div>
-
-                <div class="invalid-feedback">يرجى اختيار القسم.</div>
               </div>
 
               <!-- اسم الفصل -->
@@ -174,8 +165,6 @@
                     <div class="invalid-feedback">يرجى اختيار الفصل.</div>
                   </div>
                 </div>
-
-                <div class="invalid-feedback">يرجى اختيار الفصل.</div>
               </div>
 
               <!-- الفهرسة -->
@@ -244,8 +233,6 @@
                     <div class="invalid-feedback">يرجى اختيار نوع التقرير.</div>
                   </div>
                 </div>
-
-                <div class="invalid-feedback">يرجى اختيار نوع التقرير.</div>
               </div>
 
               <!-- اسم التقرير -->
@@ -275,11 +262,10 @@
                     </div>
                   </div>
                 </div>
-
-                <div class="invalid-feedback">يرجى إدخال عنوان التقرير.</div>
               </div>
             </div>
 
+            <!-- Right Column -->
             <div class="col-12 col-md-6">
               <!-- قائمة الطلاب -->
               <div class="form-group mb-3">
@@ -306,7 +292,65 @@
                   </div>
                 </div>
               </div>
+
+              <!-- Output Options (Grouped Buttons) -->
+              <div class="form-group mb-3">
+                <div class="output-options rounded-3">
+                  <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                    <label class="btn btn-outline-light">
+                      <input
+                        type="radio"
+                        name="outputFormat"
+                        id="excelOption"
+                        autocomplete="off"
+                        checked
+                      />
+                      Excel
+                    </label>
+                    <label class="btn btn-outline-light">
+                      <input
+                        type="radio"
+                        name="outputFormat"
+                        id="pdfOption"
+                        autocomplete="off"
+                      />
+                      PDF
+                    </label>
+                  </div>
+
+                  <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                    <label class="btn btn-outline-light">
+                      <input
+                        type="radio"
+                        name="viewOption"
+                        id="viewReport"
+                        autocomplete="off"
+                        checked
+                      />
+                      عرض التقرير
+                    </label>
+                    <label class="btn btn-outline-light">
+                      <input
+                        type="radio"
+                        name="viewOption"
+                        id="viewInNewPage"
+                        autocomplete="off"
+                      />
+                      عرض في صفحة جديدة
+                    </label>
+                  </div>
+                </div>
+              </div>
             </div>
+          </div>
+
+          <div class="text-center d-flex justify-content-center gap-2 mt-2">
+            <button type="submit" class="btn btn-secondary">حفظ</button>
+            <a
+              href="https://www.s204105.com/default.aspx"
+              class="btn btn-outline-secondary"
+              >عودة</a
+            >
           </div>
         </form>
       </div>
@@ -357,5 +401,8 @@
         });
       }
     </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
   </body>
 </html>
