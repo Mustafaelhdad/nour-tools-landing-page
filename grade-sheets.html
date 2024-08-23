@@ -16,7 +16,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
     <link rel="stylesheet" href="./css/student-info.css" />
-    <title>كشوف المهارات</title>
+    <title>تقارير الطلاب</title>
   </head>
   <body>
     <section class="student-reports py-5">
@@ -47,6 +47,7 @@
                       aria-describedby="learning-stage"
                       placeholder="المرحلة الدراسية"
                       required
+                      disabled
                     >
                       <option value="" disabled>اختر المرحلة من القائمة</option>
                       <option selected value="ابتدائي">ابتدائي</option>
@@ -60,7 +61,7 @@
                 </div>
               </div>
 
-              <!-- اسم الفصل -->
+              <!-- اسم الصف -->
               <div class="form-group mb-3">
                 <div class="form-group row">
                   <div
@@ -167,98 +168,130 @@
                 </div>
               </div>
 
-              <!-- الفهرسة -->
-              <div class="form-group my-3">
-                <div class="form-group row mb-2">
-                  <div class="col-12 col-lg-12 row d-flex align-items-center">
-                    <div class="col-4 form-check form-check-inline">
-                      <input
-                        class="form-check-input"
-                        type="radio"
-                        name="sortBy"
-                        id="sortByName"
-                        value="sortByName"
-                        required
-                      />
-                      <label class="form-check-label" for="sortByName"
-                        >فهرسة بالاسم</label
-                      >
-                    </div>
-
-                    <div class="col-4 form-check form-check-inline">
-                      <input
-                        class="form-check-input"
-                        type="radio"
-                        name="sortBy"
-                        id="sortByClass"
-                        value="sortByClass"
-                        required
-                      />
-                      <label class="form-check-label" for="sortByClass"
-                        >فهرسة بالفصل</label
-                      >
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <!-- نوع التقرير -->
+              <!-- اسم المادة -->
               <div class="form-group mb-3">
                 <div class="form-group row">
                   <div
                     class="col-2 col-lg-1 text-center d-flex align-items-end justify-content-center"
                   >
-                    <label for="reportType">
-                      <i class="fa fa-file-o fa-2x" aria-hidden="true"></i>
+                    <label for="school-subject">
+                      <i class="fa fa-book fa-2x" aria-hidden="true"></i>
                     </label>
                   </div>
 
                   <div class="col-10 col-lg-11">
-                    <label for="reportType"> نوع التقرير </label>
+                    <label for="school-subject"> المادة </label>
                     <select
                       type="text"
                       class="form-control"
-                      id="reportType"
-                      aria-describedby="reportType"
-                      placeholder="نوع التقرير"
+                      id="school-subject"
+                      aria-describedby="school-subject"
+                      placeholder="المادة"
                       required
                     >
-                      <option value="" selected>اختر نوع التقرير</option>
+                      <option value="" selected>اختر المادة</option>
                       <option value="1">1</option>
                       <option value="2">2</option>
                       <option value="3">3</option>
                       <option value="4">4</option>
                     </select>
 
-                    <div class="invalid-feedback">يرجى اختيار نوع التقرير.</div>
+                    <div class="invalid-feedback">يرجى اختيار المادة.</div>
                   </div>
                 </div>
               </div>
 
-              <!-- اسم التقرير -->
+              <!--الفترة -->
               <div class="form-group mb-3">
                 <div class="form-group row">
                   <div
                     class="col-2 col-lg-1 text-center d-flex align-items-end justify-content-center"
                   >
-                    <label for="reportName">
-                      <i class="fa fa-file fa-2x" aria-hidden="true"></i>
+                    <label for="time">
+                      <i class="fa fa-clock-o fa-2x" aria-hidden="true"></i>
                     </label>
                   </div>
 
                   <div class="col-10 col-lg-11">
-                    <label for="reportName"> عنوان التقرير </label>
+                    <label for="time"> الفترة </label>
+                    <select
+                      type="text"
+                      class="form-control"
+                      id="time"
+                      aria-describedby="time"
+                      placeholder="الفترة"
+                      required
+                    >
+                      <option value="" selected>اختر الفترة</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                    </select>
+
+                    <div class="invalid-feedback">يرجى اختيار الفترة.</div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- اسم المعلم/ة -->
+              <div class="form-group mb-3">
+                <div class="form-group row">
+                  <div
+                    class="col-2 col-lg-1 text-center d-flex align-items-end justify-content-center"
+                  >
+                    <label for="teahcerName">
+                      <i class="fa fa-user fa-2x" aria-hidden="true"></i>
+                    </label>
+                  </div>
+
+                  <div class="col-10 col-lg-11">
+                    <label for="teahcerName"> اسم المعلم/ة </label>
                     <input
                       type="text"
                       class="form-control"
-                      id="reportName"
-                      aria-describedby="reportName"
-                      placeholder="عنوان التقرير"
+                      id="teahcerName"
+                      aria-describedby="teahcerName"
+                      placeholder="اسم المعلم/ة"
                       required
                     />
 
-                    <div class="invalid-feedback">
-                      يرجى إدخال عنوان التقرير.
+                    <div class="invalid-feedback">يرجى ادخال اسم المعلم/ة.</div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- نوع العرض -->
+              <div class="form-group my-3">
+                <div class="form-group row mb-2">
+                  <div class="col-12 col-lg-12 row d-flex align-items-center">
+                    <label class="col-4 text-black">نوع الطباعة:</label>
+                    <div class="col-3 form-check form-check-inline">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="sortBy"
+                        id="horizontalPrint"
+                        value="horizontalPrint"
+                        required
+                      />
+                      <label class="form-check-label" for="horizontalPrint"
+                        >عرضي</label
+                      >
+                    </div>
+
+                    <div class="col-3 form-check form-check-inline">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="sortBy"
+                        id="verticalPrint"
+                        value="verticalPrint"
+                        required
+                      />
+                      <label class="form-check-label" for="verticalPrint"
+                        >طولي</label
+                      >
                     </div>
                   </div>
                 </div>
@@ -304,28 +337,6 @@
                     <label class="btn btn-outline-light">
                       <input
                         type="radio"
-                        name="outputFormat"
-                        id="excelOption"
-                        autocomplete="off"
-                        checked
-                      />
-                      Excel
-                    </label>
-                    <label class="btn btn-outline-light">
-                      <input
-                        type="radio"
-                        name="outputFormat"
-                        id="pdfOption"
-                        autocomplete="off"
-                      />
-                      PDF
-                    </label>
-                  </div>
-
-                  <div class="btn-group btn-group-toggle" data-toggle="buttons">
-                    <label class="btn btn-outline-light">
-                      <input
-                        type="radio"
                         name="viewOption"
                         id="viewReport"
                         autocomplete="off"
@@ -342,6 +353,15 @@
                       />
                       عرض في صفحة جديدة
                     </label>
+                    <label class="btn btn-outline-light">
+                      <input
+                        type="radio"
+                        name="viewOption"
+                        id="viewInNewPage"
+                        autocomplete="off"
+                      />
+                      PDF
+                    </label>
                   </div>
                 </div>
               </div>
@@ -350,6 +370,9 @@
 
           <div class="text-center d-flex justify-content-center gap-2 mt-2">
             <button type="submit" class="btn btn-secondary">طباعة</button>
+            <button type="submit" class="btn btn-primary">
+              الصفحة التالية
+            </button>
             <a
               href="https://www.s204105.com/default.aspx"
               class="btn btn-outline-secondary"
