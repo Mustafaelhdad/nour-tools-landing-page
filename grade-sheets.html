@@ -205,35 +205,36 @@
                 </div>
               </div>
 
-              <!-- اسم المادة -->
+              <!-- الفصل الدراسي -->
               <div class="form-group mb-3">
                 <div class="form-group row">
                   <div
                     class="col-2 col-lg-1 text-center d-flex align-items-end justify-content-center"
                   >
-                    <label for="school-subject">
-                      <i class="fa fa-book fa-2x" aria-hidden="true"></i>
+                    <label for="semester">
+                      <i class="fa fa-calendar fa-2x" aria-hidden="true"></i>
                     </label>
                   </div>
 
                   <div class="col-10 col-lg-11">
-                    <label for="school-subject"> المادة </label>
+                    <label for="semester"> الفصل الدراسي </label>
                     <select
                       type="text"
                       class="form-control"
-                      id="school-subject"
-                      aria-describedby="school-subject"
-                      placeholder="المادة"
+                      id="semester"
+                      aria-describedby="semester"
+                      placeholder="الفصل الدراسي"
                       required
                     >
-                      <option value="" selected>اختر المادة</option>
+                      <option value="" selected>اختر الفصل الدراسي</option>
                       <option value="1">1</option>
                       <option value="2">2</option>
                       <option value="3">3</option>
-                      <option value="4">4</option>
                     </select>
 
-                    <div class="invalid-feedback">يرجى اختيار المادة.</div>
+                    <div class="invalid-feedback">
+                      يرجى اختيار الفصل الدراسي.
+                    </div>
                   </div>
                 </div>
               </div>
@@ -271,6 +272,72 @@
                 </div>
               </div>
 
+              <!-- اسم المادة -->
+              <div class="form-group mb-3">
+                <div class="form-group row">
+                  <div
+                    class="col-2 col-lg-1 text-center d-flex align-items-end justify-content-center"
+                  >
+                    <label for="school-subject">
+                      <i class="fa fa-book fa-2x" aria-hidden="true"></i>
+                    </label>
+                  </div>
+
+                  <div class="col-10 col-lg-11">
+                    <label for="school-subject"> المادة </label>
+                    <select
+                      type="text"
+                      class="form-control"
+                      id="school-subject"
+                      aria-describedby="school-subject"
+                      placeholder="المادة"
+                      required
+                    >
+                      <option value="" selected>اختر المادة</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                    </select>
+
+                    <div class="invalid-feedback">يرجى اختيار المادة.</div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- نوع التقرير -->
+              <div class="form-group mb-3">
+                <div class="form-group row">
+                  <div
+                    class="col-2 col-lg-1 text-center d-flex align-items-end justify-content-center"
+                  >
+                    <label for="reportType">
+                      <i class="fa fa-file fa-2x" aria-hidden="true"></i>
+                    </label>
+                  </div>
+
+                  <div class="col-10 col-lg-11">
+                    <label for="reportType"> نوع التقرير </label>
+                    <select
+                      type="text"
+                      class="form-control"
+                      id="reportType"
+                      aria-describedby="reportType"
+                      placeholder="نوع التقرير"
+                      required
+                    >
+                      <option value="" selected>اختر نوع التقرير</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                    </select>
+
+                    <div class="invalid-feedback">يرجى اختيار نوع التقرير.</div>
+                  </div>
+                </div>
+              </div>
+
               <!-- اسم المعلم/ة -->
               <div class="form-group mb-3">
                 <div class="form-group row">
@@ -294,42 +361,6 @@
                     />
 
                     <div class="invalid-feedback">يرجى ادخال اسم المعلم/ة.</div>
-                  </div>
-                </div>
-              </div>
-
-              <!-- نوع العرض -->
-              <div class="form-group my-3">
-                <div class="form-group row mb-2">
-                  <div class="col-12 col-lg-12 row d-flex align-items-center">
-                    <label class="col-4 text-black">نوع الطباعة:</label>
-                    <div class="col-3 form-check form-check-inline">
-                      <input
-                        class="form-check-input"
-                        type="radio"
-                        name="sortBy"
-                        id="horizontalPrint"
-                        value="horizontalPrint"
-                        required
-                      />
-                      <label class="form-check-label" for="horizontalPrint"
-                        >عرضي</label
-                      >
-                    </div>
-
-                    <div class="col-3 form-check form-check-inline">
-                      <input
-                        class="form-check-input"
-                        type="radio"
-                        name="sortBy"
-                        id="verticalPrint"
-                        value="verticalPrint"
-                        required
-                      />
-                      <label class="form-check-label" for="verticalPrint"
-                        >طولي</label
-                      >
-                    </div>
                   </div>
                 </div>
               </div>
@@ -407,9 +438,6 @@
 
           <div class="text-center d-flex justify-content-center gap-2 mt-2">
             <button type="submit" class="btn btn-secondary">طباعة</button>
-            <button type="submit" class="btn btn-primary">
-              الصفحة التالية
-            </button>
             <a
               href="https://www.s204105.com/default.aspx"
               class="btn btn-outline-secondary"
